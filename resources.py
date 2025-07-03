@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+
+# Resource object code
+#
+# Created manually from resources.qrc
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore
+
+qt_resource_data = b"\
+\x00\x00\x04\x0a\
+\x89\
+PNG\x0d\x0a\x1a\x0a\x00\x00\x00\x0dIHDR\x00\x00\x00\x10\x00\x00\x00\x10\x08\x06\x00\x00\x00\x1f\xf3\xffa\x00\x00\x00\x19tEXtSoftware\x00Adobe ImageReadyq\xc9e<\x00\x00\x03\xc4IDATx\xdab\xf8\x0f\xc3@\x05\xa3\x10\x18\x0c\x8a\xe6\xe0\xe0\xe0\xe0\x60\xb8\x03\x8a\xab\xab\xab\xc7\xeb\x00\x02\x00\x00\x00\x00IEND\xaeB`\x82"
+
+qt_resource_name = b"\
+\x00\x08\
+icon.png\
+"
+
+qt_resource_struct_v1 = b"\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x08\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+"
+
+qt_resource_struct_v2 = b"\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x08\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x01\x88\xa3\xc1\xcd\xa8\
+"
+
+qt_version = [int(x) for x in QtCore.qVersion().split('.')]
+if qt_version < [5, 8, 0]:
+    rcc_version = 1
+    qt_resource_struct = qt_resource_struct_v1
+else:
+    rcc_version = 2
+    qt_resource_struct = qt_resource_struct_v2
+
+def qInitResources():
+    QtCore.qRegisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+def qCleanupResources():
+    QtCore.qUnregisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+qInitResources()

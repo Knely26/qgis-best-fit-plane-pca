@@ -1,0 +1,11 @@
+[general]
+name=Best-Fit Plane PCA
+description=Cálculo de orientaciones de superficies geológicas mediante PCA
+version=1.0.0
+qgisMinimumVersion=3.16
+author=KJBG
+email=Kleiderbg@outlook.com
+category=Vector
+tags=geology,structural,pca,dip,strike
+icon=icon.png
+experimental=True
